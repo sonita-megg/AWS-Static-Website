@@ -4,10 +4,15 @@
   "description": "Static website hosted on AWS showcasing vacation spots with waterfalls and hot springs. Features include detailed cost breakdowns and classifications based on amenities.",
   "main": "index.html",
   "scripts": {
-    "build": "mkdir -p build && cp -r src/* build/",
+    "build": "webpack --config webpack.config.js",
     "clean": "rm -rf build"
   },
-  "author": "Sonia",
-  "license": "MIT"
+  "author": "author",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "html-webpack-plugin": "^5.3.1",
+    "clean-webpack-plugin": "^4.0.0"
+  }
 }
-
