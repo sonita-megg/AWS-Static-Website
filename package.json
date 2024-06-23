@@ -1,17 +1,13 @@
 {
-  "name": "AWS-Static-Website",
+  "name": "aws-vacation-destinations",
   "version": "1.0.0",
   "description": "Static website hosted on AWS showcasing vacation spots with waterfalls and hot springs. Features include detailed cost breakdowns and classifications based on amenities.",
-  "main": "index2.html",
+  "main": "index.html",
   "scripts": {
-    "build": "echo 'Build step - customize as needed'"
-  },
-  "dependencies": {
-    "some-dependency": "^1.0.0"
-  },
-  "devDependencies": {
-    "some-dev-dependency": "^1.0.0"
+    "build": "mkdir -p build && cp -r src/* build/",
+    "clean": "rm -rf build"
   },
   "author": "Sonia",
   "license": "MIT"
 }
+
