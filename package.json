@@ -7,7 +7,7 @@
     "build": "echo 'Building the static site...' && mkdir -p dist && cp -r * dist/ && echo 'Build complete.'",
     "test": "echo 'No tests specified'"
   },
-  "author": "",
+  "author": "soniaeductesting",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {}
