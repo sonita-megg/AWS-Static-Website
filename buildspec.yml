@@ -10,7 +10,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - mkdir -p dist
+      - echo 'Creating dist directory...'
       - npm run build
+      - echo 'Copying files to dist directory...'
   post_build:
     commands:
       - echo Build completed on `date`
