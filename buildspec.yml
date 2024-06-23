@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+  build:
+    commands:
+      - echo "Building the website"
+      - npm install
+      - npm run build
+artifacts:
+  files:
+    - '**/*'
