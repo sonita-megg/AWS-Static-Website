@@ -1,13 +1,18 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
-      nodejs: latest
+      nodejs: latest # Specify the Node.js version
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install --verbose #to get more detailed error messages
+
   build:
     commands:
-      - echo "Building the website"
-      - npm install
+      - echo Build started on `date`
       - npm run build
+
 artifacts:
   files:
     - '**/*'
