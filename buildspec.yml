@@ -5,21 +5,26 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
+      - echo "Starting install phase..."
       - echo "Installing dependencies..."
       - npm install
   pre_build:
     commands:
+      - echo "Starting pre_build phase..."
       - echo "Directory contents before build:"
       - ls -la
   build:
     commands:
+      - echo "Starting build phase..."
       - echo "Build started on `date`"
       - mkdir -p dist
       - echo "Creating dist directory..."
       - npm run build
       - echo "Copying files to dist directory..."
+      - ls -la dist
   post_build:
     commands:
+      - echo "Starting post_build phase..."
       - echo "Directory contents after build:"
       - ls -la dist
       - echo "Build completed on `date`"
