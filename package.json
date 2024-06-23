@@ -1,22 +1,15 @@
 {
   "name": "vacation-destinations-site",
   "version": "1.0.0",
-  "description": "A static website showcasing vacation destinations with waterfalls and hot springs",
+  "description": "A static website showcasing vacation destinations with waterfalls and hot springs.",
   "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'Building the static site...' && mkdir -p dist && cp -r * dist/",
+    "test": "echo 'No tests specified'"
   },
-  "author": "Sonia",
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gatsby": "^4.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "gatsby-cli": "^4.0.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
 
