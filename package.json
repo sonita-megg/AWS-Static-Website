@@ -4,10 +4,10 @@
   "description": "A static website showcasing vacation destinations with waterfalls and hot springs.",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building the static site...' && mkdir -p dist && cp -r * dist/",
+    "build": "echo 'Building the static site...' && mkdir -p dist && cp -r * dist/ && echo 'Build complete.'",
     "test": "echo 'No tests specified'"
   },
-  "author": "soniaeductesting",
+  "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {}
