@@ -5,18 +5,24 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
-      - echo Installing dependencies...
+      - echo "Installing dependencies..."
       - npm install
+  pre_build:
+    commands:
+      - echo "Directory contents before build:"
+      - ls -la
   build:
     commands:
-      - echo Build started on `date`
+      - echo "Build started on `date`"
       - mkdir -p dist
-      - echo 'Creating dist directory...'
+      - echo "Creating dist directory..."
       - npm run build
-      - echo 'Copying files to dist directory...'
+      - echo "Copying files to dist directory..."
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo "Directory contents after build:"
+      - ls -la dist
+      - echo "Build completed on `date`"
 artifacts:
   files:
     - '**/*'
