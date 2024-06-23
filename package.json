@@ -4,7 +4,7 @@
   "description": "A static website showcasing vacation destinations with waterfalls and hot springs.",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building the static site...' && mkdir -p dist && cp -r * dist/ && echo 'Build complete.'",
+    "build": "echo 'Building the static site...' && mkdir -p dist && rsync -av --progress --exclude dist ./ dist/ && echo 'Build complete.'",
     "test": "echo 'No tests specified'"
   },
   "author": "",
